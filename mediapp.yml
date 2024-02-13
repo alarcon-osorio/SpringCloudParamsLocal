@@ -1,5 +1,5 @@
 server:
-  port: '8081'
+  port: 8081
 jasypt:
   encryptor:
     algorithm: PBEWithMD5AndDES
@@ -23,5 +23,3 @@ spring:
     location: banner.txt
 jwt:
   secret: ENC(dcZaXeVKl+yckUCC4qWKumXAOaYBynID/S2slHesMdtP87ZtZyl7dYfPlKgafTpsGgwRoY5MMGnZ10XmjSPKg6Eoz2/VRde1vOUYFn4zBQAWYSeKDXvStA==)
-
-
