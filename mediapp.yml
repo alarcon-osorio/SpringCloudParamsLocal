@@ -1,12 +1,6 @@
 server:
   port: 8090
 
-jasypt:
-  encryptor:
-    algorithm: PBEWithMD5AndDES
-    iv-generator-classname: org.jasypt.iv.NoIvGenerator
-    password: tlaxcala
-
 spring:
   jpa:
     database: postgresql
@@ -23,6 +17,12 @@ spring:
     url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
   banner:
     location: banner.txt
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    password: tlaxcala
 
 jwt:
   secret: ENC(dcZaXeVKl+yckUCC4qWKumXAOaYBynID/S2slHesMdtP87ZtZyl7dYfPlKgafTpsGgwRoY5MMGnZ10XmjSPKg6Eoz2/VRde1vOUYFn4zBQAWYSeKDXvStA==
