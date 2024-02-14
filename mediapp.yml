@@ -25,4 +25,4 @@ jasypt:
     password: tlaxcala
 
 jwt:
-  secret: ENC(dcZaXeVKl+yckUCC4qWKumXAOaYBynID/S2slHesMdtP87ZtZyl7dYfPlKgafTpsGgwRoY5MMGnZ10XmjSPKg6Eoz2/VRde1vOUYFn4zBQAWYSeKDXvStA==)
+  secret: aEIu9S7cvZUnPJWezau3rKUCxj4BLtpCVzhVSyam93prJOxofs7688P0OD5tmTIsLL6u7G9HpXvT
