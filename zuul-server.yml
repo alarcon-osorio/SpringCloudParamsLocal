@@ -25,7 +25,7 @@ zuul:
           preDecorationFilter:
             enabled: true
         customFilter:
-          com.tlaxcala.Prefilter:
+          com.tlaxcala.microservices.gateway.Prefilter:
             pre: true
             route: true
             post: true
