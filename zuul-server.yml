@@ -14,5 +14,5 @@ zuul:
     security:
       path: /authentication/**
       url: http://localhost:8099/login
-      stripPrefix: false 
-      sensitiveHeaders:
+      serviceId: SECURITY
+      stripPrefix: false
