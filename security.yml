@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  jpa:
+    database: postgresql
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    password: ENC(gxN0JMThL2ypgO8wsuMD3Q==)
+    driver-class-name: org.postgresql.Driver
+    username: ENC(AYdCc65yTG1177SVBBGUivvgc+3GZq+v)
+    url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
+  banner:
+    location: banner.txt
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    password: tlaxcala
+
+jwt:
+  secret: aEIu9S7cvZUnPJWezau3rKUCxj4BLtpCVzhVSyam93prJOxofs7688P0OD5tmTIsLL6u7G9HpXvT
