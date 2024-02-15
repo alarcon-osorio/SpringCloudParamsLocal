@@ -19,6 +19,10 @@ zuul:
       path: /**
       url: http://localhost:8099
       stripPrefix: false
+    security:
+      path: /**
+      url: http://localhost:8090
+      stripPrefix: false
       filters:
         pre:
           preDecorationFilter:
