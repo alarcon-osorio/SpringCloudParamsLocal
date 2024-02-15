@@ -18,7 +18,7 @@ zuul:
     security:
       path: /**
       url: http://localhost:8099
-    mediapp:
+    mediapp-consults:
       path: /consults
       url: http://localhost:8090
       stripPrefix: false
