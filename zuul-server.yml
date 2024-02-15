@@ -20,7 +20,7 @@ zuul:
       url: http://localhost:8099
       stripPrefix: false
     mediApp:
-      path: /**
+      path: /mediapp/**
       url: http://localhost:8090
       stripPrefix: false
       filters:
