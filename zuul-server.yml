@@ -13,9 +13,9 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
-    routes:
-      security: # Service to create as sample
-        path: /autentication/** #path that will be intercepted
-        url: http://localhost:8099/login #which url the request will e mapped to
-        stripPrefix: false  #if zuul should replace the "/autentication/" segment
-        sensitiveHeaders:
+  routes:
+    security:
+      path: /authentication/**
+      url: http://localhost:8099/login
+      stripPrefix: false 
+      sensitiveHeaders:
