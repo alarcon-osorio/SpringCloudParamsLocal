@@ -18,8 +18,7 @@ zuul:
     security:
       path: /**
       url: http://localhost:8099
-      stripPrefix: false 
-      sensitiveHeaders:
+      stripPrefix: false
       filters:
         pre:
           preDecorationFilter:
