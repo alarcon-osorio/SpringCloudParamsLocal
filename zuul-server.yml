@@ -6,7 +6,7 @@ eureka:
   client:
     registerWithEureka: false
     serviceUrl:
-    defaultZone: https://localhost:8761/eureka/
+      defaultZone: https://localhost:8761/eureka/
 
 zuul:
   ignoredServices: '*'
