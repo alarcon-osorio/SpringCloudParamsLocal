@@ -18,8 +18,8 @@ zuul:
     security:
       path: /**
       url: http://localhost:8099
-    mediApp:
-      path: /consults
+    mediapp:
+      path: /**
       url: http://localhost:8090
       stripPrefix: false
       filters:
