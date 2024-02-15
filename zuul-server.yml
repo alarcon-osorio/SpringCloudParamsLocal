@@ -16,8 +16,8 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     security:
-      path: login
-      url: http://localhost:8099/login
+      path: /authentication/login
+      url: http://localhost:8099
       stripPrefix: false 
       sensitiveHeaders:
       filters:
