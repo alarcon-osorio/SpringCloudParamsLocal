@@ -19,10 +19,6 @@ zuul:
       path: /**
       url: http://localhost:8099
       stripPrefix: false
-    mediApp:
-      path: /mediapp/**
-      url: http://localhost:8090
-      stripPrefix: false
       filters:
         pre:
           preDecorationFilter:
