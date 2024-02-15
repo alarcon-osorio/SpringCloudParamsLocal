@@ -10,9 +10,22 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
   routes:
     security:
       path: /authentication/**
       url: http://localhost:8099/login
-      serviceId: SECURITY
-      stripPrefix: false
+      stripPrefix: false 
+      sensitiveHeaders:
+      filters:
+        pre:
+          preDecorationFilter:
+            enabled: true
+        customFilter:
+          com.tlaxcala.Prefilter:
+            pre: true
+            route: true
+            post: true
