@@ -16,13 +16,10 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     security:
-      path: /**
+      path: /login
       url: http://localhost:8099
     mediapp-consults:
-      path: /consults
-      url: http://localhost:8090
-    mediapp-specialties:
-      path: /specialties
+      path: /**
       url: http://localhost:8090
       stripPrefix: false
       filters:
