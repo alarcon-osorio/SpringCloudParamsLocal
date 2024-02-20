@@ -18,6 +18,15 @@ spring:
   banner:
     location: banner.txt
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 5000
+
 jasypt:
   encryptor:
     algorithm: PBEWithMD5AndDES
