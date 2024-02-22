@@ -2,10 +2,5 @@ server:
   port: 8090
   
 spring:
-  info:
-    app:
-      name: mediapp-consult
-    description: Aplicacion de citas medicas
-    version: 1.0.0
   application:
     name: mediapp-consult
