@@ -41,7 +41,7 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 3
         sliding-window-size: 10
         register-health-indicator: true
-    default:  
+    mediapp-consult:  
       registerHealthIndicator: true
 
 jasypt:
