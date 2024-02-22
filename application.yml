@@ -1,1 +1,54 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    password: ENC(gxN0JMThL2ypgO8wsuMD3Q==)
+    driver-class-name: org.postgresql.Driver
+    username: ENC(AYdCc65yTG1177SVBBGUivvgc+3GZq+v)
+    url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
+  banner:
+    location: banner.txt
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    circuitbreakers:
+      enabled: true
+resilience4j:
+  circuitbreaker:
+    instances:
+      order-service:
+        sliding-window-type: COUNT_BASED
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 5
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        register-health-indicator: true
+    default:  
+      registerHealthIndicator: true
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    password: tlaxcala
+
+jwt:
+  secret: aEIu9S7cvZUnPJWezau3rKUCxj4BLtpCVzhVSyam93prJOxofs7688P0OD5tmTIsLL6u7G9HpXvT
