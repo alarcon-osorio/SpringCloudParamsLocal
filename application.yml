@@ -39,6 +39,11 @@ resilience4j:
     default:  
       registerHealthIndicator: true
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 jasypt:
   encryptor:
     algorithm: PBEWithMD5AndDES
