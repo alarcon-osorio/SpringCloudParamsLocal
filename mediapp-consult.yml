@@ -9,3 +9,8 @@ spring:
     version: 1.0.0
   application:
     name: mediapp-consult
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761
