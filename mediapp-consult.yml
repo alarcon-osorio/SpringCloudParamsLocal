@@ -25,7 +25,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: circuitbreakers,health
+        include: '*'
   health:
     circuitbreakers:
       enabled: true
@@ -41,7 +41,7 @@ resilience4j:
         permitted-number-of-calls-in-half-open-state: 3
         sliding-window-size: 10
         register-health-indicator: true
-    mediapp-consult:  
+    default:  
       registerHealthIndicator: true
 
 jasypt:
