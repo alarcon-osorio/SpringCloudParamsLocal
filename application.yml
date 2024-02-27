@@ -6,10 +6,10 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
+    url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
+    username: ENC(AYdCc65yTG1177SVBBGUivvgc+3GZq+v)
     password: ENC(gxN0JMThL2ypgO8wsuMD3Q==)
     driver-class-name: org.postgresql.Driver
-    username: ENC(AYdCc65yTG1177SVBBGUivvgc+3GZq+v)
-    url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
   banner:
     location: banner.txt
 
