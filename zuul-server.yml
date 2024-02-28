@@ -11,10 +11,10 @@ zuul:
       path: /login
       url: http://localhost:8099
     mediapp-consult:
-      path: /**
+      path: /consults
       url: http://localhost:8090
     mediapp-exams:
-      path: /**
+      path: /exams
       url: http://localhost:8091
       stripPrefix: false
       filters:
