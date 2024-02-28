@@ -13,6 +13,9 @@ zuul:
     mediapp-consults:
       path: /**
       url: http://localhost:8090
+    mediapp-exams:
+      path: /**
+      url: http://localhost:8091
       stripPrefix: false
       filters:
         pre:
