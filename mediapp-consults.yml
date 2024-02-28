@@ -3,4 +3,4 @@ server:
   
 spring:
   application:
-    name: mediapp-consult
+    name: mediapp-consults
