@@ -10,7 +10,7 @@ zuul:
     security:
       path: /login
       url: http://localhost:8099
-    mediapp-consults:
+    mediapp-consult:
       path: /**
       url: http://localhost:8090
     mediapp-exams:
