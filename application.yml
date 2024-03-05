@@ -7,7 +7,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: ENC(W6FqanvTkTdUxE0oU5AFbWFJ3eskuDsAzLAJEE4x7tkPW1zWoJP8+pjnsLivrnyDTv26C6vJbE0=)
-    username: ENC($2a$10$fezLvAb6ma02Ls51H80os.0M7dC/JhzYzLEChVWD32Gj9nYCREqwO)
+    username: ENC(2a$10$mT47IkkKJL/WOq4h0vdl4.NcntDpiyn/4ITMikczmoH5b458PTBta)
     password: ENC(gxN0JMThL2ypgO8wsuMD3Q==)
     driver-class-name: org.postgresql.Driver
   banner:
