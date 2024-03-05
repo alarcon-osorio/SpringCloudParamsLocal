@@ -3,4 +3,4 @@ server:
   
 spring:
   application:
-    name: mediapp-medic
+    name: mediapp-medics
