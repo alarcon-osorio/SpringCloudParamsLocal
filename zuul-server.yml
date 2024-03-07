@@ -19,6 +19,9 @@ zuul:
     mediapp-medics:
       path: /medics
       url: http://localhost:8092
+    mediapp-patients:
+      path: /patients
+      url: http://localhost:8093
       stripPrefix: false
       filters:
         pre:
