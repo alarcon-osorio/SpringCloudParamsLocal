@@ -16,15 +16,6 @@ zuul:
     mediapp-exams:
       path: /exams
       url: http://localhost:8091
-    mediapp-medics:
-      path: /medics
-      url: http://localhost:8092
-    mediapp-patients:
-      path: /patients
-      url: http://localhost:8093
-    mediapp-specialties:
-      path: /specialties
-      url: http://localhost:8094
       stripPrefix: false
       filters:
         pre:
