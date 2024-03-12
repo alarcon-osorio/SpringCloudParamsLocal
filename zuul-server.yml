@@ -1,6 +1,13 @@
 server:
   port: 8080
 
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
+
 zuul:
   ignoredServices: '*'
   host:
