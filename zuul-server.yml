@@ -19,7 +19,7 @@ zuul:
       url: http://localhost:8099
     mediapp-consults:
       path: /consults
-      url: http://localhost:8090
+      url: http://172.17.0.6:8090
     mediapp-exams:
       path: /exams
       url: http://localhost:8091
