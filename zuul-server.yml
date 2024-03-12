@@ -22,7 +22,7 @@ zuul:
       url: http://172.17.0.6:8090
     mediapp-exams:
       path: /exams
-      url: http://localhost:8091
+      url: http://172.17.0.7:8091
     mediapp-medics:
       path: /medics
       url: http://localhost:8092
