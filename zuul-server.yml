@@ -25,7 +25,7 @@ zuul:
       url: http://172.17.0.7:8091
     mediapp-medics:
       path: /medics
-      url: http://localhost:8092
+      url: http://172.17.0.8:8092
     mediapp-patientes:
       path: /patientes
       url: http://localhost:8093
