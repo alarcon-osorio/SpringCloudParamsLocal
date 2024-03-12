@@ -4,3 +4,10 @@ server:
 spring:
   application:
     name: mediapp-consults
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.17.0.3:8761/eureka/
