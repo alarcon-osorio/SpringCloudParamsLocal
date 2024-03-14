@@ -15,23 +15,29 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     mediapp-security:
-      path: /login
-      url: http://localhost:8099
+      path: /login/**
+      url: http://localhost:8099/login
+      service-id: mediapp-security
     mediapp-consults:
       path: /consults/**
       url: http://172.17.0.6:8090/consults
+      service-id: mediapp-consults
     mediapp-exams:
-      path: /exams
-      url: http://172.17.0.7:8091
+      path: /exams/**
+      url: http://172.17.0.7:8091/exams
+      service-id: mediapp-exams
     mediapp-medics:
-      path: /medics
-      url: http://172.17.0.8:8092
+      path: /medics/**
+      url: http://172.17.0.8:8092/medics
+      service-id: mediapp-medics
     mediapp-patientes:
-      path: /patientes
-      url: http://localhost:8093
+      path: /patientes/**
+      url: http://localhost:8093/patientes
+      service-id: mediapp-patientes
     mediapp-specialties:
-      path: /specialties
-      url: http://localhost:8094
+      path: /specialties/**
+      url: http://localhost:8094/specialties
+      service-id: mediapp-specialties
       stripPrefix: false
       filters:
         pre:
