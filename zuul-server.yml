@@ -30,10 +30,10 @@ zuul:
       path: /medics/**
       url: http://172.17.0.8:8092/medics
       service-id: mediapp-medics
-    mediapp-patientes:
-      path: /patientes/**
-      url: http://localhost:8093/patientes
-      service-id: mediapp-patientes
+    mediapp-patients:
+      path: /patients/**
+      url: http://172.17.0.9:8093/patients
+      service-id: mediapp-patients
     mediapp-specialties:
       path: /specialties/**
       url: http://localhost:8094/specialties
