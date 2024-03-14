@@ -18,7 +18,7 @@ zuul:
       path: /login
       url: http://localhost:8099
     mediapp-consults:
-      path: /consults
+      path: /consults/**
       url: http://172.17.0.6:8090
     mediapp-exams:
       path: /exams
