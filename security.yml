@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: mediapp-security
+    name: security
 
 eureka:
   client:
