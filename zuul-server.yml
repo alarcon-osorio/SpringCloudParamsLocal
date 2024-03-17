@@ -20,10 +20,10 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
-    mediapp-security:
+    security:
       path: /security/**
       url: http://172.17.0.6:8099/security
-      service-id: mediapp-security
+      service-id: security
     mediapp-consults:
       path: /consults/**
       url: http://172.17.0.7:8090/consults
