@@ -1,6 +1,12 @@
 server:
   port: 8080
 
+app:
+  addMappString: "/**"
+  allowedOrigins: "*"
+  allowedMethods: GET, POST, PUT, DELETE
+  allowedHeaders: Authorization, Content-Type
+
 eureka:
   client:
     registerWithEureka: true
