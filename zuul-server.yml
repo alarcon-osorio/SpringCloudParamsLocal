@@ -7,6 +7,10 @@ app:
   allowedMethods: GET, POST, PUT, DELETE
   allowedHeaders: Authorization, Content-Type
 
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul: DEBUG
+
 eureka:
   client:
     registerWithEureka: true
