@@ -22,7 +22,7 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     security:
-      path: /security/**
+      path: /security
       url: http://172.17.0.6:8099/security
       service-id: security
     mediapp-consults:
