@@ -15,6 +15,7 @@ eureka:
       defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
 
 zuul:
+  sensitive-headers: Cookie,Set-Cookie,Authorization
   ignoredServices: '*'
   host:
     connect-timeout-millis: 20000
