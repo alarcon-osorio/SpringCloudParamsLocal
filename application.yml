@@ -13,6 +13,10 @@ spring:
   banner:
     location: banner.txt
 
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul: DEBUG
+
 management:
   endpoint:
     health:
