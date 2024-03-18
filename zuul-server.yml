@@ -19,14 +19,14 @@ eureka:
       defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
 
 zuul:
-  sensitive-headers: Cookie,Set-Cookie,Authorization
+  sensitiveHeaders: Cookie,Set-Cookie,Authorization
   ignoredServices: '*'
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
     security:
-      path: /security
+      path: /security/**
       url: http://172.17.0.6:8099/security
       service-id: security
     mediapp-consults:
@@ -59,3 +59,9 @@ zuul:
             pre: true
             route: true
             post: true
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        secret: aEIu9S7cvZUnPJWezau3rKUCxj4BLtpCVzhVSyam93prJOxofs7688P0OD5tmTIsLL6u7G9HpXvT
