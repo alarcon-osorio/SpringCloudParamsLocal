@@ -12,7 +12,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
+      defaultZone: http://localhost:8761/eureka/ #Docker Network local replace localhost
 
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
