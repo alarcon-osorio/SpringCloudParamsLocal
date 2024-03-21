@@ -21,6 +21,11 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
+    auth-center:
+      path: /login/**
+      url: http://127.0.0.1:8081/
+      sensitiveHeaders: Cookie,Set-Cookie
+      stripPrefix: false
     security:
       path: /security/**
       url: http://localhost:8099/security
@@ -45,7 +50,6 @@ zuul:
       path: /specialties/**
       url: http://172.17.0.11:8094/specialties
       service-id: mediapp-specialties
-      stripPrefix: false
       filters:
         pre:
           preDecorationFilter:
