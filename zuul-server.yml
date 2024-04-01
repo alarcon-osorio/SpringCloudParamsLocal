@@ -12,7 +12,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ #Docker Network local replace localhost
+      defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
 
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
@@ -23,11 +23,11 @@ zuul:
   routes:
     security:
       path: /security/**
-      url: http://localhost:8099/security
+      url: http://172.17.0.6:8099/security
       service-id: security
     mediapp-consults:
       path: /consults/**
-      url: http://localhost:8090/consults
+      url: http://172.17.0.7:8090/consults
       service-id: mediapp-consults
     mediapp-exams:
       path: /exams/**
