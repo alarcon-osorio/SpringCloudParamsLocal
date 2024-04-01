@@ -45,7 +45,7 @@ zuul:
       path: "/specialties/**"
       url: "http://172.17.0.11:8094/specialties"
       service-id: "mediapp-specialties"
-      stripPrefix: false
+      #stripPrefix: false ##Default true
       filters:
         pre:
           preDecorationFilter:
