@@ -4,47 +4,47 @@ server:
 app:
   addMappString: "/**"
   allowedOrigins: "*"
-  allowedMethods: GET, POST, PUT, DELETE
-  allowedHeaders: Authorization, Content-Type
+  allowedMethods: "GET, POST, PUT, DELETE"
+  allowedHeaders: "Authorization, Content-Type"
 
 eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://172.17.0.3:8761/eureka/ #Docker Network local replace localhost
+      defaultZone: "http://172.17.0.3:8761/eureka/" # Docker Network local replace localhost
 
 zuul:
-  sensitiveHeaders: Cookie,Set-Cookie,Authorization
-  ignoredServices: '*'
+  sensitiveHeaders: "Cookie,Set-Cookie,Authorization"
+  ignoredServices: "*"
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
     security:
-      path: /security/**
-      url: http://172.17.0.6:8099/security
-      service-id: security
+      path: "/security/**"
+      url: "http://172.17.0.6:8099/security"
+      service-id: "security"
     mediapp-consults:
-      path: /consults/**
-      url: http://172.17.0.7:8090/consults
-      service-id: mediapp-consults
+      path: "/consults/**"
+      url: "http://172.17.0.7:8090/consults"
+      service-id: "mediapp-consults"
     mediapp-exams:
-      path: /exams/**
-      url: http://172.17.0.8:8091/exams
-      service-id: mediapp-exams
+      path: "/exams/**"
+      url: "http://172.17.0.8:8091/exams"
+      service-id: "mediapp-exams"
     mediapp-medics:
-      path: /medics/**
-      url: http://172.17.0.9:8092/medics
-      service-id: mediapp-medics
+      path: "/medics/**"
+      url: "http://172.17.0.9:8092/medics"
+      service-id: "mediapp-medics"
     mediapp-patients:
-      path: /patients/**
-      url: http://172.17.0.10:8093/patients
-      service-id: mediapp-patients
+      path: "/patients/**"
+      url: "http://172.17.0.10:8093/patients"
+      service-id: "mediapp-patients"
     mediapp-specialties:
-      path: /specialties/**
-      url: http://172.17.0.11:8094/specialties
-      service-id: mediapp-specialties
+      path: "/**"
+      url: "http://172.17.0.11:8094/specialties"
+      service-id: "mediapp-specialties"
       stripPrefix: false
       filters:
         pre:
