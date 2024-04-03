@@ -6,7 +6,7 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: ENC(4qrIpoBX2axSWbAEe1Ku6SBDzWShtrui4gchh6/b1J4x4k19uIXQ8qEKRfMzj6zaaY0WGfOSrEcJ0uE66ImrWA==)
+    url: ENC(b3HDHFH3NDpnZ0GEVRqL69jfrJdT98TsMpQ/f2zaa8O1M/5OdA1holI4zH2pO4/KrQhhrgDkEyY=)
     username: ENC(OmYhUytp7/x65zuN1utzqD9hkvRiC5+N)
     password: ENC(kqFdCRbJZHJ6A1DdYQXyxw==)
     driver-class-name: org.postgresql.Driver
