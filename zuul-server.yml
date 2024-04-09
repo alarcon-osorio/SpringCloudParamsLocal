@@ -5,7 +5,7 @@ app:
   addMappString: "/**"
   allowedOrigins: "*"
   allowedMethods: "GET, POST, PUT, DELETE"
-  allowedHeaders: "Authorization, Content-Type"
+  allowedHeaders: "*"
 
 eureka:
   client:
